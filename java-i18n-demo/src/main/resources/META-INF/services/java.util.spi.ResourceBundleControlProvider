@@ -1,0 +1,3 @@
+# 配置 java.util.spi.ResourceBundleControlProvider 实现类
+# 如果有多个的话，往下边写就好了，Dubbo 的 SPI 可以有 key
+com.darian.javai18ndemo.javase.EncodingResourceBundleControlProvider

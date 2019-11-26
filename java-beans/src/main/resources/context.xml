@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.darian.javabeans.User">
+        <property name="name" value="darian"/>
+        <property name="id" value="1"/>
+        <property name="date" value="2018-11-30"/>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="propertyEditorRegistrars">
+            <list>
+                <bean class="com.darian.javabeans.MyPropertyEditorRegistrar"></bean>
+            </list>
+        </property>
+    </bean>
+</beans>

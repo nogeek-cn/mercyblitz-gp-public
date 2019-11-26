@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:darian="http://darian.com/schema/darian"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://darian.com/schema/darian
+        http://darian.com/schema/darian.xsd
+">
+
+    <!-- Schema Namespace -->
+    <!-- prefix: local-element-name = context:conponent-scan -->
+    <!--<context:component-scan base-package=""/>-->
+
+    <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="locations">-->
+            <!--<value>application.properties</value>-->
+        <!--</property>-->
+        <!--<property name="fileEncoding" value="UTF-8"/>-->
+    <!--</bean>-->
+
+    <!-- context:property-placeholder = PropertyPlaceHolderCongigurer -->
+    <context:property-placeholder location="application.properties" file-encoding="UTF-8"/>
+    <!-- XML Schema 拓展替代 Bean 配置 -->
+
+    <!--<bean id="user" class="com.darian.springxmlextension.domain.User">-->
+        <!--<property name="id" value="1"/>-->
+        <!--<property name="name" value="${name}"/>-->
+    <!--</bean>-->
+
+    <darian:user bean-name="user" id="1" name="${name}"/>
+
+</beans>

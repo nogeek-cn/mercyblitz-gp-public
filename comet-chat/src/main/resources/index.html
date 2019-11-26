@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div>消息框：<textarea id="msgWin"></textarea></div>
+<div>用户：<input id="user-name" value=""></div>
+<div>消息内容：<input id="msg" value=""></div>
+<div>
+    <button id="btn" value="发送"></button>
+</div>
+<iframe id="iframe" style="display: none;" src="/chat/comet"
+onload="refresh()"></iframe>
+</body>
+<script type="text/javascript">
+    
+    function appendMsg(msg) {
+        var oldMsg = $("#msgWin").html();
+        $("#msgWin").html(oldMsg + msg);
+    }
+    
+    function refresh(){
+        // 当请求超时的时候，再次请求，Streaming......>>>>>
+        $('#iframe').attr('src','/chat/comet')
+    }
+
+    $(function () {
+        $('#btn').click(function () {
+            var userName = $("#user-name").val();
+            var msg = $("msg").val();
+            var params = "userName=" + userName
+                + "&message=" + msg;
+            $.post("/chat/comet", params, function (data) {
+
+            });
+        });
+    })
+</script>
+</html>

@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:00:00:48 +0800] GET /index.jsp HTTP/1.1 200 192 http-bio-8080-exec-1 351
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:00:00:48 +0800] GET /favicon.ico HTTP/1.1 404 973 http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:00:00:55 +0800] POST /my-servlet HTTP/1.1 200 15 http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:00:01:06 +0800] POST /my-servlet HTTP/1.1 200 21 http-bio-8080-exec-5 0

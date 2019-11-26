@@ -1,0 +1,21 @@
+<web-app>
+    <filter>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>com.darian.servlet.design.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <servlet-name>myServlet</servlet-name>
+    </filter-mapping>
+
+    <!-- MyFilter2 -->
+    <filter>
+        <filter-name>MyFilter2</filter-name>
+        <filter-class>com.darian.servlet.design.MyFilter2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter2</filter-name>
+        <servlet-name>myServlet</servlet-name>
+    </filter-mapping>
+
+</web-app>
