@@ -89,3 +89,11 @@
 ##### java-i18n-demo : 深入 JAVA 系列之国际化
 
 ##### NIO2-file-event : 深入 JAVA 系列之 NIO2 在文件事件通知中的应用
+
+---
+
+2020-05-24
+
+##### eureka-closed-source： Eureka 2.0 比原之后，Spring Cloud 何去何从？
+
+##### spring-cloud-bus-demo：Spring Cloud 分布式事件驱动编程
