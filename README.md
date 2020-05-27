@@ -97,3 +97,24 @@
 ##### eureka-closed-source： Eureka 2.0 比原之后，Spring Cloud 何去何从？
 
 ##### spring-cloud-bus-demo：Spring Cloud 分布式事件驱动编程
+
+- eureka-server-demo ： 使用了 Eureka 注册中心。
+
+##### proxy-demo: 微服务网关设计
+
+- 手动实现一个 zuul 的网关
+
+##### proxy-demo: 还有 微服务网关整合
+
+---
+
+#### 微服务网关新选择， Spring  Cloud Gateway
+
+##### spring-cloud-zuul-demo: 
+
+##### spring-cloud-gateway-demo: 
+
+##### rest-service-provider-demo
+
+----
+
