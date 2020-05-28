@@ -1,0 +1,26 @@
+server:
+  port: 7070
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: gateway
+        uri: http://127.0.0.1:8080/
+        predicates:
+        - Path=/rest-api/**
+        filters:
+        # 截取一段
+        - StripPrefix=1
+        - name: Hystrix
+          args:
+            name: rest
+            fallbackUri: forward:/fallback
+
+hystrix:
+  command:
+    rest:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100
